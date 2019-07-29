@@ -10,7 +10,7 @@ def index():
 @app.route('/car', methods = ["GET", "POST"])
 def add_event_car():
     if request.method == "GET":
-        print("hello u use a car")
+        # print("hello u use a car")
         return render_template("newevent.html")
     else:
         print("world")
@@ -18,7 +18,7 @@ def add_event_car():
 @app.route('/bus', methods = ["GET", "POST"])
 def add_event_bus():
     if request.method == "GET":
-        print("hello u use a bus")
+        # print("hello u use a bus")
         return render_template("newevent.html")
     else:
         print("world")
@@ -26,7 +26,7 @@ def add_event_bus():
 @app.route('/train', methods = ["GET", "POST"])
 def add_event_train():
     if request.method == "GET":
-        print("hello u use a train")
+        # print("hello u use a train")
         return render_template("newevent.html")
     else:
         print("world")
@@ -34,7 +34,7 @@ def add_event_train():
 @app.route('/plane', methods = ["GET", "POST"])
 def add_event_plane():
     if request.method == "GET":
-        print("hello u use a plane")
+        # print("hello u use a plane")
         return render_template("newevent.html")
     else:
         print("world")
@@ -42,7 +42,7 @@ def add_event_plane():
 @app.route('/walk', methods = ["GET", "POST"])
 def add_event_walk():
     if request.method == "GET":
-        print("hello u use a walk")
+        # print("hello u use a walk")
         return render_template("newevent.html")
     else:
         print("world")
@@ -50,7 +50,7 @@ def add_event_walk():
 @app.route('/bicycle', methods = ["GET", "POST"])
 def add_event_bicycle():
     if request.method == "GET":
-        print("hello u use a bicycle")
+        # print("hello u use a bicycle")
         return render_template("newevent.html")
     else:
         print("world")
@@ -58,7 +58,7 @@ def add_event_bicycle():
 @app.route('/boat', methods = ["GET", "POST"])
 def add_event_bioat():
     if request.method == "GET":
-        print("hello u use a boat")
+        # print("hello u use a boat")
         return render_template("newevent.html")
     else:
         print("world")
