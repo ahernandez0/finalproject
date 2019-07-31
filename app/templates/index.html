@@ -9,9 +9,14 @@
 		<title>Climate Change</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="static/assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+		<link href="static/assets/css/style.css" rel="stylesheet" type="text/css">
 	</head>
 	<body class="is-preload">
 
@@ -21,10 +26,10 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<a href="#" class="icon solid fa-home"><span>Home</span></a>
-						<a href="#work" class="icon solid fa-book"><span>Facts</span></a>
-						<a href="#contact" class="icon solid fa-tree"><span>Impact</span></a>
+						<a href="#work" class="icon solid fa-tree"><span>What is it?</span></a>
+						<a href="#contact" class="icon solid fa-book"><span>Facts</span></a>
 						<a href="#resources" class="icon solid fa-globe"><span>Resources</span></a>
-						<a href="#quiz" class="icon solid fa-child"><span>Other</span></a>
+						<a href="#quiz" class="icon solid fa-child"><span>Quiz</span></a>
 					</nav>
 
 				<!-- Main -->
@@ -36,22 +41,44 @@
 									<h1>Climate Change</h1>
 									<p>Welcome! Feel free to navigate through the above sections</p>
 								</header>
-								<a href="#work" class="jumplink pic">
-									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-									<img src="static/images/me.jpeg" alt="" />
-								</a>
+								<img src="static/images/me.jpeg" alt="" />
+								<!--<a href="#work" class="jumplink pic">-->
+								<!--	<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>-->
+								<!--	<img src="static/images/me.jpeg" alt="" />-->
+								<!--</a>-->
 							</article>
 
 						 <!--Work --> <!--the causes and effects-->
 							<article id="work" class="panel">
 								<header>
-									<h2>Causes + Effects</h2>
+									<h2>What is it?</h2>
 								</header>
-								<p>
-									Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-									Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-									luctus elit eget interdum.
-								</p>
+								
+								
+									<h4><center>CAUSE & EFFECT</center></h4>
+									<h6>Causes</h6>
+									<p>
+									When talking about Earth’s climate change it is important we understand what greenhouse gases are. Greenhouse gases are gases in our atmosphere that absorb infrared radiation and as a result, they hold and trap heat. We will go over 3 types of greenhouse gases, how they get released in our atmosphere and how they impact our environment. These should give you an idea of how greenhouse gases, in general, get produced and easily create changes to our environment.
+									</p>
+									<div class="container">
+										<div class="row">
+											<div class="col s3 m3 l3"> <h4>Nitrogen</h4>
+												<p>As the most abundant gas in our atmosphere, it plays an important role for farmers.  It is essential for plant growth asit can be used to make fertiliser and boost crop yeilds. However, farmers in the U.S. waste around 40% of the nitrogen they use in their crops. Other culprits include vehicle exhaust, power plant exhaust, and large-animal feeding operations</p>
+											</div>
+											<div class="col s3 m3 l3"> <h4>Carbon dioxide</h4>
+												<p>CO2 is released through natural processes such as respiration and volcano eruptions and through human activities such as deforestation, land-use changes, and burning fossil fuels.</p>
+											</div>
+										 	<div class="col s3 m3 l3"> <h4>Methane</h4>
+												<p>This hydrocarbon gas is produced both through natural sources and human activities, including the decomposition of wastes in landfills, agriculture- especially rice cultivation.  as well as manure management associated with domestic livestock.</p>
+											</div>
+										</div>
+									</div>
+									<h6>Effects</h6>
+									<p>
+									 On average, the Earth will become warmer. These temperatures will lead to more evaporation and precipitation overall. A stronger greenhouse effect will warm the oceans and melt glaciers, increasing sea level. Ocean water will also expand (since water expands as it warms), further contributing to a rise in sea level. Higher temperatures and shifting climate patterns may change the areas where crops grow best and affect the makeup of natural plant communities.
+									</p>
+								
+								
 								<section>
 									<div class="row">
 										<div class="col-4 col-6-medium col-12-small">
@@ -97,7 +124,7 @@
 						<!-- Contact --> <!-- mitigation and adaptation -->
 							<article id="contact" class="panel">
 								<header>
-									<h2>Mitigation and Adaptation</h2>
+									<h2>Facts</h2>
 								</header>
 								<p>
 									Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
@@ -131,22 +158,78 @@
 								<header>
 									<h2>What's YOUR carbon footprint?</h2>
 								</header>
-								<p>
-									Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-									Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-									luctus elit eget interdum.
-								</p>
+								<h3>Here we will ask you a series of questions to determine your carbon footprint. Please answer the qustions by choosing one of the options from each dropdown.
+								</h3>
+								<p>What is your method of transportation ?</p>
+								<form method="post" action="/continue">
+								<div class="container">                      
+								  <div class="dropdown">
+								    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Choose one
+								    <span class="caret"></span></button>
+								    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+								      <li role="presentation"><a role="menuitem" tabindex="-1" href="#car">Car</a></li>
+								      <li role="presentation"><a role="menuitem" tabindex="-1" href="#train">Train</a></li>
+								      <li role="presentation"><a role="menuitem" tabindex="-1" href="#bus">Bus</a></li>
+								      <li role="presentation"><a role="menuitem" tabindex="-1" href="#plane">Plane</a></li>
+								      <li role="presentation"><a role="menuitem" tabindex="-1" href="#walk">Walk</a></li>
+								      <li role="presentation"><a role="menuitem" tabindex="-1" href="#boat">Boat</a></li>
+								      <li role="presentation"><a role="menuitem" tabindex="-1" href="#bicycle">Bicycle</a></li>
+								    </ul>
+								  </div>
+								</div>
+								</form>
+								<!--<p>-->
+								<!--	Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.-->
+								<!--	Vestibulum ante ipsum primis in faucibus orci  luctus et ultrices posuere cubilia-->
+								<!--	luctus elit eget interdum.-->
+								<!--</p>-->
 							</article>
+							
 							<!-- Resources -->
 							<article id="resources" class="panel">
+								
 								<header>
-									<h2>Reports + Resources</h2>
+									<h2>Reports &  Resources</h2>
 								</header>
-								<p>
-									Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-									Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-									luctus elit eget interdum.
-								</p>
+								
+								<div class="row">
+								  <div class="columm">
+								    <img src="static/images/report1.jpg" alt="Heart-Wrenching Video Shows Starving Polar Bear on Iceless Land" style="width:100%">
+								  </div>
+								  <div class="column">
+								    <img src="static/images/report2.jpg" alt="The Uninhabitable Earth" style="width:100%">
+								  </div>
+								  <div class="column">
+								    <img src="static/images/report3.jpg" alt="There are diseases hidden in ice, and they are waking up" style="width:100%">
+								  </div>
+								</div>
+								
+								<!--<div id= "report1">-->
+								<!--	<h6>Heart-Wrenching Video Shows Starving Polar Bear on Iceless Land</h6>-->
+								<!--	<p>by Sarah Gibbens</p>-->
+								<!--		<a href="https://news.nationalgeographic.com/2017/12/polar-bear-starving-arctic-sea-ice-melt-climate-change-spd/"><button class="button"><span><img id="image1" src="static/images/report1.jpg"></span></button></a>-->
+								<!--</div>-->
+								
+								<!--<br></br>-->
+								
+								<!--<div id= "report2">-->
+								<!--	<h6>The Uninhabitable Earth</h6>-->
+								<!--	<p>by David Wallace-Wells</p>-->
+								<!--		<a href="http://nymag.com/intelligencer/2017/07/climate-change-earth-too-hot-for-humans.html"><button class="button"><span><img id="image2" src="static/images/report2.jpg"></span></button></a>-->
+								<!--</div>-->
+								
+								<!--<br><br/>-->
+								
+								<!--<div id= "report3">-->
+								<!--	<h6>There are diseases hidden in ice, and they are waking up</h6>-->
+								<!--	<p>by Jasmin Fox-Skelly </p>-->
+								<!--		<a href="http://www.bbc.com/earth/story/20170504-there-are-diseases-hidden-in-ice-and-they-are-waking-up"><button class="button"><span><img id="image3" src="static/images/report3.jpg"></span></button></a>-->
+								<!--</div>-->
+								
+								
+								
+								
+								
 							</article>
 
 					</div>

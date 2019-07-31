@@ -7,11 +7,11 @@ from app.models import model, formopener
 def index():
     return render_template("index.html")
 
-@app.route('/car', methods = ["GET", "POST"])
+@app.route('/#car', methods = ["GET", "POST"])
 def add_event_car():
     if request.method == "GET":
-        # print("hello u use a car")
-        return render_template("newevent.html")
+        print("hello u use a car")
+        return render_template("index.html")
     else:
         print("world")
         
