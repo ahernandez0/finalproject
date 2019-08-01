@@ -1,22 +1,7 @@
  #quiz {
-  height: 600px;
+  height: 1300px;
  }
  
-  #image1 {
-  height: 100px;
-  width: 100px;
- }
- 
- 
- #image2 {
-  height: 100px;
-  width: 100px;
- }
- 
-  #image3 {
-  height: 100px;
-  width: 100px;
- }
  
  .column {
   float: left;
@@ -76,3 +61,12 @@
 
  /*Change the background color of the dropdown button when the dropdown content is shown */
 /*.dropdown:hover .dropbtn {background-color: #3e8e41;}*/
+
+									/*<ol>*/
+									/*	<li><h4>Nitrogen</h4>*/
+									/*		<p>As the most abundant gas in our atmosphere, it plays an important role for farmers.  It is essential for plant growth asit can be used to make fertiliser and boost crop yeilds. However, farmers in the U.S. waste around 40% of the nitrogen they use in their crops. Other culprits include vehicle exhaust, power plant exhaust, and large-animal feeding operations</p></li>*/
+									/*	<li><h4>Carbon dioxide</h4>*/
+									/*		<p>CO2 is released through natural processes such as respiration and volcano eruptions and through human activities such as deforestation, land-use changes, and burning fossil fuels.</p> </li>*/
+									/*	<li><h4>Methane</h4>*/
+									/*		<p>This hydrocarbon gas is produced both through natural sources and human activities, including the decomposition of wastes in landfills, agriculture- especially rice cultivation.  as well as manure management associated with domestic livestock.</p></li>*/
+									/*</ol> */

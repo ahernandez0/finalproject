@@ -1306,7 +1306,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("images/overlay.png"), url("images/bg.jpg");
+		background-image: url("images/overlay.png"), url("images/bg.jpg.dms");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		background-attachment: fixed;
@@ -1551,7 +1551,7 @@ input, select, textarea {
 	}
 
 		.image img {
-			display: block;
+			/*display: block;*/
 			width: 100%;
 		}
 
