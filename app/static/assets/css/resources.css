@@ -32,6 +32,11 @@
     
 }
 
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
 #containerA, #containerB, #containerC{
     display: flex;
     flex-flow: row wrap;
