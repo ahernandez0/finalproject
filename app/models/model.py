@@ -23,3 +23,15 @@ def carbon_footprint(transpo, rec, anim):
         return "medium"
     elif score >= 40 and score <= 53:
         return "high"
+        
+def suggestion(transpo, rec, anim):
+    sugg = {}
+    if transpo == 'bus' or transpo == 'train' or transpo == 'boat' or transpo == 'plane' or transpo == 'car':
+        sugg.update({"transpo" : "Based on your answers, why don't you try a different method of transportation like walking more often or using a bicycle."})
+    if rec == "no":
+        sugg.update({"rec" : "Recycling is one small thing that makes a huge difference. When possible, try recycling more."})
+    if anim != "never":
+        sugg.update({"anim" : "Farms easily use up a lot of resources and are working to become more efficient but a more conscious decision is to try eating less animal products."})
+    if not sugg:
+        sugg.update({"good" : "You are on the right path, keep on doing what you are doing."})
+    return sugg

@@ -7,7 +7,7 @@ from app.models import model, formopener
 def index():
     return render_template("index.html")
 
-@app.route('/quiz', methods = ["GET", "POST"])
+@app.route('/quiz_result', methods = ["GET", "POST"])
 def quix():
     if request.method == "GET":
          return "hello u use a car"
@@ -21,6 +21,8 @@ def quix():
         name = user_data["name"]
         print("your transpo method is " +transport+ " and you " +recycle+ "  recycle and eat animal products " +animal+ ". your name is " +name)
         final_score = model.carbon_footprint(transport, recycle, animal)
+        suggestion = model.suggestion(transport, recycle, animal)
         print(final_score)
-        return render_template("quiz.html", final_score = final_score, name = name )
+        print(suggestion)
+        return render_template("quiz.html", final_score = final_score, name = name, suggestion = suggestion)
 
