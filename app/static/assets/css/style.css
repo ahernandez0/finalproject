@@ -2,6 +2,12 @@
   height: 1300px;
  }
  
+ #quiz2 {
+  height : 810px;
+ }
+ #result {
+  font-family: 'Vollkorn', serif;
+ }
  .column {
   float: left;
   width: 33.33%;
