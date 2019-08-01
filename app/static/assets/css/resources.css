@@ -7,7 +7,7 @@
     background-color: #DED797;
     /*float: inherit;*/
     border-style: double;
-    border-color:#D35B3F;
+    border-color: #31595E;
     border-width: 5px;
 }
 
@@ -32,10 +32,6 @@
     
 }
 
-.responsive {
-  width: 100%;
-  height: auto;
-}
 
 #containerA, #containerB, #containerC{
     display: flex;

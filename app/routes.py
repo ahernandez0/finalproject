@@ -18,10 +18,11 @@ def quix():
         transport = user_data["transportation"]
         recycle = user_data["recycle"]
         animal = user_data["animal"]
+        energy = user_data["energy"]
         name = user_data["name"]
-        print("your transpo method is " +transport+ " and you " +recycle+ "  recycle and eat animal products " +animal+ ". your name is " +name)
-        final_score = model.carbon_footprint(transport, recycle, animal)
-        suggestion = model.suggestion(transport, recycle, animal)
+        print("your transpo method is " +transport+ " and you " +recycle+ "  recycle and eat animal products " +animal+ ". your name is " +name+ " and you "+energy)
+        final_score = model.carbon_footprint(transport, recycle, animal, energy)
+        suggestion = model.suggestion(transport, recycle, animal, energy)
         print(final_score)
         print(suggestion)
         return render_template("quiz.html", final_score = final_score, name = name, suggestion = suggestion)
