@@ -28,19 +28,39 @@ def carbon_footprint(transpo, rec, anim, en):
     elif score >= 63 and score <= 83:
         return "high"
         
+import random
 def suggestion(transpo, rec, anim, en):
     sugg = {}
+    num = 0
     if transpo == 'bus' or transpo == 'train' or transpo == 'boat' or transpo == 'plane' or transpo == 'car':
-        sugg.update({"1" : "Based on your answers, why don't you try a different method of transportation like walking more often or using a bicycle."})
+        sugg.update({num+1 : "Based on your answers, why don't you try a different method of transportation like walking more often or using a bicycle."})
+        num = num + 1
+        # print(num)
+        # print(sugg)
     if rec == "no":
-        sugg.update({"2" : "Recycling is one small thing that makes a huge difference. When possible, try recycling more."})
+        sugg.update({num+1 : "Recycling is one small thing that makes a huge difference. When possible, try recycling more."})
+        num = num + 1
+        # print(num)
+        # print(sugg)
     if anim != "never":
-        sugg.update({"3" : "Farms easily use up a lot of resources and are working to become more efficient but a more conscious decision is to try eating less animal products."})
+        sugg.update({num+1 : "Farms easily use up a lot of resources and are working to become more efficient but a more conscious decision is to try eating less animal products."})
+        num = num +1
+        # print(num)
+        # print(sugg)
     if en != "efficient":
-        sugg.update({"4" : "Your housing is not very efficient. If possible we suggest you try improving your household with more energy efficient methods."})
+        sugg.update({num+1 : "Your housing is not very efficient. If possible we suggest you try improving your household with more energy efficient methods."})
+        num = num + 1
+        # print(num)
+        # print(sugg)
     if not sugg:
         sugg.update({"good" : "You are on the right path, keep on doing what you are doing."})
-    return sugg
+        return sugg["good"]
+    else:
+        # print(num)
+        # print(sugg)
+        return sugg[random.randint(1, num)]
+    # return sugg
+    
 
     
     

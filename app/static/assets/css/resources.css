@@ -1,4 +1,4 @@
-#p1, #p2, #p3, #p4, #p5, #p6{
+#p1, #p2, #p3, #p4, #p5, #p6, #p7, #p8, #p9, #p10{
     height:150px;
     width:150px;
     float: none;
@@ -11,7 +11,7 @@
     border-width: 5px;
 }
 
-#minicontainerAL, #minicontainerBL, #minicontainerCL{
+#minicontainerAL, #minicontainerBL, #minicontainerCL, #minicontainerDL, #minicontainerEL{
     flex: 1;
     text-align:center; 
     margin: 35px;
@@ -21,7 +21,7 @@
     margin-right:20px;
 }
 
-#minicontainerAR, #minicontainerBR, #minicontainerCR{
+#minicontainerAR, #minicontainerBR, #minicontainerCR, #minicontainerDR, #minicontainerER{
     flex: 1;
     text-align:center; 
     margin: 35px;
@@ -33,7 +33,7 @@
 }
 
 
-#containerA, #containerB, #containerC{
+#containerA, #containerB, #containerC, #containerD, #containerE{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -47,6 +47,7 @@
     font-size: 20px;
     font-style: italic;
     font-weight: bold;
+    font-family: 'Alegreya', serif;
 }
 
 
@@ -56,3 +57,9 @@
     color:#31595E;
 }
 
+
+
+
+
+
+ 
